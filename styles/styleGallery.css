@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khand&family=PT+Sans+Narrow:wght@400;700&family=Rajdhani&family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    font-family: "PT Sans Narrow", sans-serif;
+    background-image:linear-gradient(to bottom, #31363F , rgb(57, 67, 68),#32454f,rgb(5, 64, 75,1),#31363F);
+    color: #EEEEEE;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+      .imgsGaleria{
+        display: grid;
+        grid-template-columns:repeat(12, 1fr);
+        grid-template-rows: 1,2fr;
+        max-width: 100%;
+        gap: 10px;
+      }
+      .imgItem1{
+
+        width: 100%;
+        grid-column: 1/5;
+        grid-row: 1;
+      }
+      .imgItem2{
+        grid-column: 5/9;
+        grid-row: 1;
+      }
+      .imgItem3{
+        grid-column: 9/13;
+        grid-row: 1;
+      }
+      .imgItem4{
+        grid-column: 1/4;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+      }
+
+      .imgItem5{
+        width: 100%;
+        grid-column: 4/7;
+        grid-row: 2;
+      }
+      .imgItem6{
+        width: 100%;
+        grid-column: 7/10;
+        grid-row: 2;
+      }
+      .imgItem7{
+        width: 100%;
+        grid-column: 10/13;
+        grid-row: 2;
+      }
+      .imgGaleria{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+      }
+      .linkGaleria{
+        filter: grayscale(100);
+        transition: 0.6s;
+      }
+      .linkGaleria:hover{
+        z-index: 999;
+        transform: scale(1.1);
+        filter: grayscale(0);
+      }
+      .colores{
+        width: 100%;
+      }
+      .carousel-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        width: 100%;
+      }
+      
+      .nav-btn {
+        width: 40px;
+        height:40px;
+        border: none;
+        border-radius:5px;
+        cursor: pointer;
+        margin: 0 5px;
+      }
+      .nav-btn:hover {
+        animation: btnColors 1s;
+      transform: scale(1.1);  
+      }
+      .nav-btn.active{
+        transform: scale(1.1);
+        border: 1px solid white;
+        border-bottom: 3px rgb(0, 119, 255,1) solid;
+      }
+      @keyframes btnColors{
+        0%{
+          transform: scale(1.0);
+        }
+        100%{
+          transform: scale(1.1);
+        }
+      }
+      #cactus-gray:active{
+        
+        transform: scale(1.1);
+      }
+      #imgCarousel{
+          width: 99.4%;
+      }
+      .carousel-slide{
+          width: 100%;
+      }
+      #cactus-gray{
+        background-image: linear-gradient( to bottom,#5c697aff,#3b4346ff);
+      }
+      #blue{
+        background-image: linear-gradient(to top, #001937ff, #076da3ff );
+      }
+      #carbonized-gray{
+        background-image: linear-gradient(to bottom, #7c7f84ff,#28272dff);
+      }
+      #azure-gray{
+        background-image: linear-gradient(to bottom, #5a687bff,#414a5cff);
+      }
+      #black{
+        background-image: linear-gradient(to bottom, #000000ff, #000000ff);
+      }
+      #red{
+        background-image: linear-gradient(to bottom, #ff0000ff, #4c0c0aff);
+      }
+      #silver-gray{
+        background-image: linear-gradient(to bottom, #8a8e9aff, #4e525eff);
+      }
+      #white{
+        background-image: linear-gradient(to bottom, #afb2bbff, #848b98ff);
+      }
+      #textCarCol{
+        text-align: center;
+        font-family: "Rajdhani", sans-serif;
+        font-size: 28px;
+      }
+      @keyframes showToast{
+        0%{
+          opacity: 0.0;
+        }
+        100%{
+          opacity: 0.7;
+        }
+
+
+      }
+      .toast{
+        animation: showToast 0.6s;
+        font-family: "Rajdhani",sans-serif;
+        background-color: rgba(82, 82, 82, 0.7);
+        position:fixed;
+        right: 40px;
+        bottom: 40px;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 10px;
+         z-index: 1000;
+      }
+      #titleToast{
+        text-align: center;
+        margin-bottom: -4px;
+      }
+      #textToast{
+        text-align: center;
+        margin-top: -3px;
+        margin-bottom: 5px;
+      }
+      .buttonsToast{
+        display: flex;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-left: 55px;
+
+      }
+      #linkToastYes{
+        padding: 4px;
+        margin-right: 20px;
+        color: white;
+        text-decoration: none;
+        padding-left:5px;
+        padding-right: 5px;
+        background-color: rgb(0, 117, 82,0.1);
+        border: 1px solid rgb(255, 255, 255,0.1);
+        border-radius: 5px;
+        box-shadow: 3px 4px 7px rgb(0, 160, 112,0.1);
+      }
+      #linkToastNo{
+        padding: 4px;
+        padding-left:5px;
+        padding-right: 5px;
+        margin-right: 20px;
+        color: white;
+        text-decoration: none;
+        padding-left:5px;
+        padding-right: 5px;
+        background-color: rgb(139, 0, 0,0.1);
+        border: 1px solid rgb(255, 255, 255,0.1);
+        border-radius: 5px;
+        box-shadow: 3px 4px 7px rgb(207, 0, 0,0.1);
+      }
+      .bi.bi-checkmark{
+        color: white;
+      }
+      .bi.bi-x{
+        color: white;
+      }
+      
+      #linkToastYes:hover{
+        animation: btnToaYes 0.7s;
+        color: white;
+        background-color: rgb(0, 117, 82,1);
+        border: 1px solid rgb(255, 255, 255,1);
+        border-radius: 5px;
+        box-shadow: 3px 4px 7px rgb(0, 160, 112,1);
+      }
+      #linkToastNo:hover{
+        animation: btnToaNo 0.7s;
+        color: white;
+        background-color: rgb(139, 0, 0,1);
+        border: 1px solid rgb(255, 255, 255,1);
+        border-radius: 5px;
+        box-shadow: 3px 4px 7px rgb(207, 0, 0,1);
+      }
+      @keyframes btnToaYes{
+        0%{
+          background-color: rgb(0, 117, 82,0.1);
+          border: 1px solid rgb(255, 255, 255,0.1);
+          box-shadow: 1px 2px 4px rgb(0, 160, 112,0.1);
+        }
+        100%{
+          background-color: rgb(0, 117, 82,1);
+          border: 1px solid rgb(255, 255, 255,1);
+          box-shadow: 3px 4px 7px rgb(0, 160, 112,1);
+        }
+      }
+      @keyframes btnToaNo{
+        0%{
+          background-color: rgb(139, 0, 0,0.1);
+          border: 1px solid rgb(255, 255, 255,0.1);
+          box-shadow: 1px 2px 4px rgb(207, 0, 0,0.1);
+        }
+        100%{
+          background-color: rgb(139, 0, 0,1);
+          border: 1px solid rgb(255, 255, 255,1);
+          box-shadow: 3px 4px 7px rgb(207, 0, 0,1);
+        }
+      }

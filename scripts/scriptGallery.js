@@ -4,9 +4,25 @@ const btnYes = document.querySelector("#linkToastYes");
 const btnNo = document.querySelector("#linkToastNo")
 const slides = document.querySelectorAll('.carousel-slide');
 const navBtns = document.querySelectorAll('.nav-btn');
+const btnDrop=document.querySelector('.btnTools');
 const botones={} ;
 let currentSlide = 0;
-
+const linkDrop=document.querySelector('.contTools');
+function desplegar(){
+    linkDrop.classList.toggle('show');
+    btnDrop.classList.toggle('btnActivado');
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.tools')) {
+      for (let i = 0; i < linkDrop.length; i++) {
+        let openDropdown = linkDrop[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+          btnDrop.classList.remove('btnActivado');
+        }
+      }
+    }
+  };
 function showSlide(n) {
   slides[currentSlide].style.display = 'none';
   currentSlide = (n + slides.length) % slides.length;
@@ -15,7 +31,7 @@ function showSlide(n) {
 }
 
 navBtns.forEach((btn, index) => {
-  btn.addEventListener('click', () => showSlide(index));
+  btn.addEventListener('click ', () => showSlide(index));
 });
 
 function updateNav() {

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khand&family=PT+Sans+Narrow:wght@400;700&family=Rajdhani&family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    font-family:"Rajdhani", sans-serif;
+    color: white;
+}
+.container{
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top left, #1c3531, #182f3b);
+
+
+}
+.link{
+    text-decoration: none;
+    color: white;
+    font-family:"Rajdhani", sans-serif;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #044b7254;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.7s;
+}
+.link:hover{
+    background-color: #044b72;
+}
+@media (width<605px){
+    h1{
+        font-size: 23px;
+    }
+}
