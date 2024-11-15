@@ -544,7 +544,7 @@ body{
       font-family: "Rajdhani",sans-serif;
     }
     .parallax{
-      background-image: url("/banners/f150avif");
+      background-image: url("../banners/f150avif");
       min-height:460px;
       margin-left: -20px;
       background-attachment: fixed;
@@ -558,7 +558,7 @@ body{
       padding: 10px;
     }
     .parallaxRanger{
-      background-image: url("/banners/ranger.avif");
+      background-image: url("../banners/ranger.avif");
       min-height:460px;
       margin-left: -20px;
       background-attachment: fixed;
@@ -572,7 +572,7 @@ body{
       padding: 10px;
     }
     .parallaxMav{
-      background-image: url("/banners/maverick.avif");
+      background-image: url("../banners/maverick.avif");
       min-height:460px;
       margin-left: -20px;
       background-attachment: fixed;

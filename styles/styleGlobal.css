@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khand&family=PT+Sans+Narrow:wght@400;700&family=Rajdhani&family=Roboto+Condensed:ital,wght@1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: "PT Sans Narrow", sans-serif;
+    background-image:linear-gradient(to bottom, #31363F , rgb(57, 67, 68),#32454f,rgb(5, 64, 75,1),#31363F);
+    color: #EEEEEE;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+
+
+
+
+
+  #titlePag{
+
+    font-family:"Rajdhani", sans-serif; 
+    color: black;
+    text-decoration: none;
+    display: flex;
+  }
+  #titlePag:hover{
+    color: #00767c;
+  }
+
+  .nav{
+    animation: entradaNav 0.8s;
+    color: black;
+    background-color: #ffffff6c;
+    font-family:"Rajdhani", sans-serif; 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    z-index: 999;
+    transition: 0.7s;
+  }
+  @keyframes  entradaNav{
+    0%{
+      margin-top: -200px;
+      opacity: 0;
+    }
+    100%{
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+
+  .nav:hover{
+    padding-bottom: 6px;
+    padding-top: 6px;
+    background-color: #ffffffd0;
+  }
+  .linkNav{
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    font-size:16px;
+    background-color: rgba(108, 161, 164,0.0);
+    padding:8px;
+    border: rgb(228, 238, 238,0.0) 2px solid;
+    border-radius: 5px;
+  }
+  .linkNav:hover{
+    animation: linksAnimation 1s;
+    color: white;
+    border: rgb(238, 238, 238,1.0) 2px solid;
+    background-color: #2d5759;
+  }
+  @keyframes linksAnimation{
+    0%{
+      border: rgb(238, 238, 238,0.0) 2px solid;
+      background-color: rgba(118, 171, 174,0.0);
+    }
+    100%{
+      border: rgb(238, 238, 238,1.0) 2px solid;
+      background-color: #2d5759;
+    }
+  }
+  .titleNav{
+    background-color: transparent;
+    color: #EEEEEE;
+
+  }
+  /* BANNERS */
+  .bannerHeaderF{
+    width:100%;
+    height: 1000px;
+    background-image: url("https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/f-150f-150/2024/collections/dm/_90A7890_V1.tif?croppathe=1_16x9&wid=1440");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+  }
+  .bannerHeaderR{
+    width:100%;
+    height: 1000px;
+    background-image: url("https://www.vdm.ford.com/content/dam/vdm_ford/live/en_us/ford/nameplate/ranger/2024/collections/3-2/Ranger_VHP_Billboard_2160x1215.jpg/jcr:content/renditions/cq5dam.web.1440.1440.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+  }
+  @media (max-width:1250px) {
+    .bannerHeaderR{
+      height: 900px;
+    } 
+  }
+  @media (max-width:950px) {
+    .bannerHeaderR{
+      height: 800px;
+    } 
+  }
+  @media (max-width:730px) {
+    .bannerHeaderR{
+      height: 700px;
+    } 
+  }
+  @media (max-width:400px) {
+    .bannerHeaderR{
+      height: 600px;
+      background-position: right;
+
+    } 
+  }
+  .bannerHeaderM{
+    width:100%;
+    height: 1000px;
+    background-image: url("https://www.ford.com/is/image/content/dam/vdm_ford/live/en_us/ford/nameplate/maverick/2024/collections/dm/P758_24_FRD_MAV_53100_v1.tif?croppathe=1_16x9&wid=1440");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+    align-items: center;
+  }
+  #imgBanner{
+    width: 101%;
+    height: 100%;
+    margin-top: -40px;
+  }
+  .contentBanner{
+    animation:inicioBanner 1.5s;
+    position: relative;
+    top: -10%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  @keyframes inicioBanner {
+    0%{
+      opacity: 0;
+
+    }
+    100%{
+      opacity: 1;
+
+    }
+    
+  }
+  .textBanner{
+    display: flex;
+    flex-flow: column nowrap;
+    color: white;
+    font-family:"Khand", sans-serif; 
+    font-size: 30px;
+
+  }
+    .btnBanner{
+      color: white;
+      font-size: 16px;
+      font-family:"Rajdhani", sans-serif; 
+
+      display: flex; 
+      background-color: rgba(34, 40, 49,0.01);
+      padding: 2px;
+      border: 1px solid transparent;
+      border-radius: 5px;
+      text-decoration: none;
+      text-shadow: 3px 3px 1px rgba(0, 0, 0,0.3);
+    }
+    .btnBanner:hover{
+      animation: btnBanner 1s;
+      background-color: rgba(34, 40, 49,1);
+      box-shadow: 2px 4px 6px rgba(8, 45, 61, 1);
+    }
+    @keyframes btnBanner{
+      0%{background-color: rgba(34, 40, 49,0.01);
+        box-shadow: 2px 4px 6px rgba(8, 45, 61, 0.0);
+      }
+      100%{
+        background-color: rgba(34, 40, 49,1);
+        box-shadow: 2px 4px 6px rgba(8, 45, 61, 1);
+      }
+    
+      }
+
+/* BARRA DE CONSULTAS */
+    
+.consultBar{
+  width: 100%;
+  z-index: 999;
+  color: black;
+  background-image: linear-gradient(to right,rgb(255, 255, 255), rgb(200,200,200));
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.btnTools{
+    background-color: #00767c;
+    color: white;
+    height: 100%;
+    padding: 3px;
+    margin-left: 15px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.contTools{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: 0.7s;
+  margin-left: -5px;
+  margin-top: 2px;
+}
+.show{
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 9999;
+  opacity: 1;
+}
+.btnActivado{
+  z-index: 9999;
+}
+#tool{
+  text-decoration: none;
+  color: black;
+  border-top: 1px rgb(41, 41, 41) solid;
+  padding-top: 7px;
+  padding-bottom:7px;
+
+}
+.last{
+  border-top:1px rgb(51, 51, 51,0.0) solid ;
+}
+
+#tool:hover{
+  animation:tool 0.3s;
+  background-color:rgb(51, 51, 51) ;
+  color: white;
+}
+@keyframes tool{
+  0%{
+    background-color: rgb(51,51, 51, 0.0);
+    color: rgb(0, 0, 0);
+  }
+  100%{
+    background-color: rgb(51,51, 51, 1);
+    color: rgb(255,255, 255);
+  }
+
+}
+#modelBar{
+
+  color: rgb(32, 62, 79);
+  font-family: "Rajdhani",sans-serif;
+}
+#priceBar{
+  margin-right: 4px;
+  font-family: "Rajdhani",sans-serif;
+  
+}
+#priceBar:hover{
+  animation: priceBar 0.2s;
+  font-size: 16.5px;
+  color:rgb(0, 115, 141);
+
+}
+@keyframes priceBar{
+  0%{
+    color: black;
+    font-size: 16px;
+  }
+  100%{
+    font-size: 16.5px;
+    color:rgb(0, 115, 141);
+  }
+}
